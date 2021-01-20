@@ -53,8 +53,7 @@ header{
     padding-top: .5%;
     border-style: dotted;
     margin: 2%;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
 hr{
@@ -65,13 +64,7 @@ hr{
     background-color: rgba(137, 137, 235, 0.2);
     display: block;
 }
-.main h2{
-    font-family: 'Acme', sans-serif;
-    text-align: center;
-}
-/*.box0{
-    border:solid black 1px;
-    }*/
+
     .boxlt{
         display: inline-block;
         width: 30%;
@@ -80,11 +73,12 @@ hr{
     .box1{
         color: rgb(255,0,0);
         display: inline-block;
+        font-family: 'Acme', sans-serif;
         border: dotted #fff;
-        width: 100%;
+        width: 100%;padding: 1%;
     }
 
-    .box1 img{
+    .box3 img, .box1 img{
 
         height: 1em;
         margin: 0%;
@@ -94,7 +88,8 @@ hr{
         color: rgb(29, 122, 209);
         display: inline-block;
         border: double #fff;
-        width: 100%;
+        font-family: 'Acme', sans-serif;
+        width: 100%;padding: 1%;
     }
 
     .box2 img{
@@ -106,9 +101,64 @@ hr{
         color: rgb(6, 92, 6);
         display: block;
         border: dotted #fff;
-        width: 100%;
+        font-family: 'Acme', sans-serif;
+        width: 100%;padding: 1%;
     }
 
+    input[type=text], select, textarea {    
+        width: 100%;    
+        padding: 12px;    
+        border: 1px solid rgb(70, 68, 68);    
+        border-radius: 4px;    
+        resize: vertical;    
+      }    
+      input[type=email], select, textarea {    
+        width: 100%;    
+        padding: 12px;    
+        border: 1px solid rgb(70, 68, 68);    
+        border-radius: 4px;    
+        resize: vertical;    
+      }    
+          
+      label {    
+        padding: 12px 12px 12px 0;    
+        display: inline-block;    
+      }    
+          
+      input[type=submit] {    
+        background-color: rgb(37, 116, 161);    
+        color: white;    
+        padding: 1em 1em;    
+        border: none;    
+        border-radius: 1em;    
+        cursor: pointer;    
+        float: right;    
+      }    
+          
+      input[type=submit]:hover {    
+        background-color: #45a049;    
+      }    
+          
+      .container {    
+        border-radius: 2em;    
+        background-color: #f2f2f21e;    
+        padding: 20px;    
+        color: #fff;
+      }    
+          
+      .flabel {    
+        float: left;    
+        width: 25%;    
+        margin-top: 6em;    
+      }    
+          
+      .fholder {    
+        float: left;    
+        width: 75%;    
+        margin-top: 6em;    
+      }    
+          
+      /* Clear floats after the columns */    
     .link1:hover{
         background: orangered;
         border-style: double;
@@ -183,3 +233,38 @@ hr{
             -0.025em -0.07em 0 rgba(0,0,255,.75);
         }
     }
+    .rate {
+        float: left;
+        height:3em;
+    }
+    .rate:not(:checked) > input {
+        position:absolute;
+        top:-999em;
+    }
+    .rate:not(:checked) > label {
+        float:right;
+        width:1em;
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:2em;
+        color:#ccc;
+    }
+    .rate:not(:checked) > label:before {
+        content: '★ ';
+    }
+    .rate > input:checked ~ label {
+        color: #ffc700;    
+    }
+    .rate:not(:checked) > label:hover,
+    .rate:not(:checked) > label:hover ~ label {
+        color: #deb217;  
+    }
+    .rate > input:checked + label:hover,
+    .rate > input:checked + label:hover ~ label,
+    .rate > input:checked ~ label:hover,
+    .rate > input:checked ~ label:hover ~ label,
+    .rate > label:hover ~ input:checked ~ label {
+        color: #c59b08;
+    }
+    
