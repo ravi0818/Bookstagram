@@ -1,0 +1,24 @@
+.foot{
+    background-color: rgba(255, 255, 255,0.4);
+}
+
+.foot h3{
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(243, 169, 10), rgb(238, 16, 8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.foot a{
+    text-decoration: none;
+}
+
+.foot hr{
+    display: fixed;
+    background-color: darkred;
+}
+
+.foot img{
+    height: 2em;
+    width: 2em;
+}
