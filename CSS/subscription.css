@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images\bg2.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+
