@@ -8,3 +8,42 @@ body{
     background-size: cover;
 }
 
+.boxfree, .boxPro{
+    display: inline-block;
+    border: dotted #fff;
+    padding: .5%;
+    margin: 2%;
+    color: #fff;
+    font-family: 'Acme', sans-serif;
+    width: 45%;
+    text-align: center;
+    height: 30rem;
+    border-radius: 2rem;
+    background-color: rgba(114, 107, 107, 0.466);
+}
+
+.boxPro h1, .boxfree h1{
+    animation: textanime 5s infinite;
+}
+
+.boxPro{
+    float: right;
+}
+
+@keyframes textanime{
+    0%, 24%{
+        font-size: 2.5em;
+    }
+    25%, 49%{
+        font-size: 2.75em;
+        color: rgb(12, 4, 56);
+    }
+}
+
+.boxPro button{
+    border: blue;
+    border-radius: 1em;
+    background-color: cadetblue;
+    padding: 1%;
+    font-size: medium;
+}
