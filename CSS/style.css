@@ -27,6 +27,8 @@ h2{
 .box1{
     color: rgb(255,0,0);
     display: inline-block;
+    overflow: scroll;
+    height: 30rem;
     font-family: 'Acme', sans-serif;
     border: dotted #fff;
     width: 100%;padding: 1%;
@@ -42,6 +44,8 @@ h2{
     color: rgb(29, 122, 209);
     display: inline-block;
     border: double #fff;
+    height: 91rem;
+    overflow: scroll;
     font-family: 'Acme', sans-serif;
     width: 100%;padding: 1%;
 }
