@@ -1,0 +1,89 @@
+input[type=text], select, textarea {    
+    width: 100%;    
+    padding: 12px;    
+    border: 1px solid rgb(70, 68, 68);    
+    border-radius: 4px;    
+    resize: vertical;    
+}    
+input[type=email], select, textarea {    
+    width: 100%;    
+    padding: 12px;    
+    border: 1px solid rgb(70, 68, 68);    
+    border-radius: 4px;    
+    resize: vertical;    
+}    
+
+label {    
+    padding: 12px 12px 12px 0;    
+    display: inline-block;    
+}    
+
+input[type=submit] {    
+    background-color: rgb(37, 116, 161);    
+    color: white;    
+    padding: 1em 1em;    
+    border: none;    
+    border-radius: 1em;    
+    cursor: pointer;    
+    float: right;    
+}    
+
+input[type=submit]:hover {    
+    background-color: #45a049;    
+}    
+
+.container {    
+    border-radius: 2em;    
+    background-color: #f2f2f21e;    
+    padding: 20px;    
+    color: #fff;
+}    
+
+.flabel {    
+    float: left;    
+    width: 25%;    
+    margin-top: 6em;    
+}    
+
+.fholder {    
+    float: left;    
+    width: 75%;    
+    margin-top: 6em;    
+}    
+
+/* Clear floats after the columns */    
+
+.rate {
+    float: left;
+    height:3em;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-999em;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:2em;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
