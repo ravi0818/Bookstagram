@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    border: dotted #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.164);
+    padding: 2%;
+    margin: 5%;
+    font-family: 'Acme', sans-serif;
+    height: 25rem;
+}
+
+input[type=text], select, textarea, input[type=password] {    
+    width: 90%;    
+    padding: 1%;    
+    border: solid rgb(70, 68, 68);    
+    border-radius: 1rem;    
+    resize: vertical;
+    margin: 1%;
+}    
+
+label {    
+    font-size: 2em;
+    padding: 1%;  
+    color: #f2e10d;      
+}    
+
+input[type=submit] {    
+    background-color: rgb(37, 116, 161);    
+    color: white;    
+    padding: 1%;    
+    border: none;    
+    border-radius: 1em;    
+    cursor: pointer;       
+}    
+
+input[type=submit]:hover {    
+    background-color: #45a049;    
+}    
