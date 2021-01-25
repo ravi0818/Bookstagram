@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/postin.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>tinymce.init({selector:'textarea'});</script>
+  <title>Post</title>
+</head>
+<body>
+  <div id="headgen"></div>
+
+  <div class="container">
+    <form >
+     <lable>Post Title:</lable> <input type = "text" name = "post_title" />
+     <br>
+     <lable>Featured Image:</lable><input type = "file" name = "fileupload" accept = "image/*" />
+     <br>
+     <lable>Description :</lable><textarea type= "text" rows = "20" cols = "50" name = "description"></textarea>
+     <br>
+     <input class="btn btn-primary" type="submit" value="Submit">
+   </form>   
+   <hr>
+ </div>    
+
+
+ <div id="footgen"></div>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+ <script src="JS/script.js"></script>
+</body>
+</html>
