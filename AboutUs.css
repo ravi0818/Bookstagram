@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    }
+    
+    body{
+        background-image: url(images/bookimg1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #SubHeading{
+    text-align: center;
+    color: rgb(253, 196, 9);
+    font-size: 3rem;
+    font-family: Dancing Script;
+    animation: mymove 5s infinite;
+    }
+      
+      @keyframes mymove {
+        50% {text-shadow: 10px 20px 30px white;}
+      }
+      body {
+          font-family: 'Dancing Script';font-size: 22px;
+      }
+    
+    .Content{
+        border: dotted #fff;
+        height: 30rem;
+        padding: 1%;
+        font-family: 'Acme', sans-serif;
+        margin-top: 1%;
+        margin: 3%;
+        width: match-parent;
+        border-radius: 2rem;
+        background-color: rgba(7, 83, 58, 0.664);
+    }
